@@ -1,7 +1,9 @@
-if p1 {
+event_inherited()
+
+if player.p1 {
 	x += 15
 }
-else if !p1 {
+else if !player.p1 {
 	x -= 15
 }
 hitbox.x = x

@@ -29,23 +29,14 @@ else if !p1 {
 	});
 }
 
-function bullet(_key){
+function bullet(_key, _x_offset, _y_offset){
 	if keyboard_check_pressed(_key) && fire_delay < 0 {
-		if p1 {
-			var _bullet = instance_create_depth(x + 15, y - 35, 1, obj_bullet,
-			{
-				box_x: box_x,
-				box_y: box_y
-			})
-		}
-		else if !p1 {
-			var _bullet = instance_create_depth(x - 15, y - 35, 1, obj_bullet,
-			{
-				p1 : false,
-				box_x: box_x,
-				box_y: box_y
-			})
-		}
+		var _bullet = instance_create_depth(x + 15, y - 35, 1, obj_bullet,
+		{
+			player: id,
+			box_x: box_x,
+			box_y: box_y
+		});
 		fire_delay = fire_rate
 	}
 }
@@ -63,18 +54,31 @@ function charge(_key){
 }
 
 function laser(){
-	var _laser_pos = ds_grid_get(obj_grid_manager.grid, box_x, box_y)
 	if p1 {
-		instance_create_depth(_laser_pos.x, _laser_pos.y - 35, 2, obj_initial_laser_beam, {
-			box_x: box_x,
-			box_y: box_y
-		});
+		for (var _i = box_x; _i < ds_grid_width(obj_grid_manager.grid); _i++) { 
+			create_laser_beam(_i)
+		}
 	} else if !p1 {
-		instance_create_depth(_laser_pos.x, _laser_pos.y - 35, 2, obj_initial_laser_beam, {
-			p1: false,
-			box_x: box_x,
+		for (var _i = box_x; _i >= 0; _i--) { 
+			create_laser_beam(_i)
+		}
+	}
+}
+
+function create_laser_beam(_i){
+	var _pos = ds_grid_get(obj_grid_manager.grid, _i, box_y)
+	if _i == box_x {
+		var _laser = instance_create_depth(_pos.x, _pos.y - 35, 2, obj_laser_beam, {
+			player: id,
+			box_x: _i,
 			box_y: box_y,
-			image_angle: 180
+			first_beam: true
+		});
+	} else {
+		var _laser = instance_create_depth(_pos.x, _pos.y - 35, 2, obj_laser_beam, {
+			player: id,
+			box_x: _i,
+			box_y: box_y,
 		});
 	}
 }

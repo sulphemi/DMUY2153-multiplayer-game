@@ -1,4 +1,3 @@
-max_life = life
 invul_timer = 0
 hit = false
 

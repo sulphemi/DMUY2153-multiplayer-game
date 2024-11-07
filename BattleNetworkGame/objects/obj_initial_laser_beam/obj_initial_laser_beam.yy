@@ -9,8 +9,8 @@
   "name":"obj_initial_laser_beam",
   "overriddenProperties":[],
   "parent":{
-    "name":"Box Char",
-    "path":"folders/Objects/Box Char.yy",
+    "name":"Penguin Tank",
+    "path":"folders/Objects/Penguin Tank.yy",
   },
   "parentObjectId":null,
   "persistent":false,

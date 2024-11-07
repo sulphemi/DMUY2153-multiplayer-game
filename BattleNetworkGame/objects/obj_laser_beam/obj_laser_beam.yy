@@ -9,10 +9,13 @@
   "name":"obj_laser_beam",
   "overriddenProperties":[],
   "parent":{
-    "name":"Box Char",
-    "path":"folders/Objects/Box Char.yy",
+    "name":"Penguin Tank",
+    "path":"folders/Objects/Penguin Tank.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_player_attack",
+    "path":"objects/obj_player_attack/obj_player_attack.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,9 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"box_x","filters":[],"listItems":[],"multiselect":false,"name":"box_x","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"box_y","filters":[],"listItems":[],"multiselect":false,"name":"box_y","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"p1","filters":[],"listItems":[],"multiselect":false,"name":"p1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"first_beam","filters":[],"listItems":[],"multiselect":false,"name":"first_beam","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

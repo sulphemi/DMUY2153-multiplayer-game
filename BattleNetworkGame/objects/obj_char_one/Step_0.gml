@@ -1,11 +1,11 @@
 event_inherited()
 
 if p1 {
-	bullet(vk_space)
+	bullet(vk_space, 15, -35)
 	charge(vk_space)
 }
 else if !p1 {
-	bullet(vk_rshift)
+	bullet(vk_rshift, -15, -35)
 	charge(vk_rshift)
 }
 

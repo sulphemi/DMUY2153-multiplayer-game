@@ -9,12 +9,12 @@
   "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Box Char",
-    "path":"folders/Objects/Box Char.yy",
+    "name":"Penguin Tank",
+    "path":"folders/Objects/Penguin Tank.yy",
   },
   "parentObjectId":{
-    "name":"obj_projectile",
-    "path":"objects/obj_projectile/obj_projectile.yy",
+    "name":"obj_player_attack",
+    "path":"objects/obj_player_attack/obj_player_attack.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

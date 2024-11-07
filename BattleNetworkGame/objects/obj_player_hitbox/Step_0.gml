@@ -1,9 +1,9 @@
-if place_meeting(x, y, obj_proj_hitbox) {
-	var _inst = instance_place(x, y, obj_proj_hitbox)
-	if p1 && !_inst.p1 && !hit {
+if place_meeting(x, y, obj_player_attack_hitbox) {
+	var _inst = instance_place(x, y, obj_player_attack_hitbox)
+	if player.p1 && !_inst.player.p1 && !hit {
 		damaged_by_player(_inst)
 	}
-	else if !p1 && _inst.p1 &&!hit {
+	else if !player.p1 && _inst.player.p1 && !hit {
 		damaged_by_player(_inst)
 	}
 }

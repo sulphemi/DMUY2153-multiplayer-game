@@ -11,6 +11,7 @@ else {
 
 	hitbox = instance_create_depth(pos.x, pos.y, 4, obj_player_attack_hitbox, {
 		player: player,
-		damage: 20
+		damage: 20,
+		mana_restore: 90
 	});
 }

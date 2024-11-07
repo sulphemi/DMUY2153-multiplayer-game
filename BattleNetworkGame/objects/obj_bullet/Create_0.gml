@@ -2,5 +2,6 @@ hitbox = instance_create_depth(ds_grid_get(obj_grid_manager.grid, box_x, box_y).
 			ds_grid_get(obj_grid_manager.grid, box_x, box_y).y, 4, obj_player_attack_hitbox,
 			{
 				player: player,
-				damage: 10
+				damage: 10,
+				mana_restore: 30
 			});

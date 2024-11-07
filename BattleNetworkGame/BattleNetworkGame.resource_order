@@ -31,7 +31,6 @@
     {"name":"obj_entity","order":4,"path":"objects/obj_entity/obj_entity.yy",},
     {"name":"obj_flamethrower","order":6,"path":"objects/obj_flamethrower/obj_flamethrower.yy",},
     {"name":"obj_grid_manager","order":1,"path":"objects/obj_grid_manager/obj_grid_manager.yy",},
-    {"name":"obj_initial_laser_beam","order":5,"path":"objects/obj_initial_laser_beam/obj_initial_laser_beam.yy",},
     {"name":"obj_laser_beam","order":4,"path":"objects/obj_laser_beam/obj_laser_beam.yy",},
     {"name":"obj_player_attack_hitbox","order":7,"path":"objects/obj_player_attack_hitbox/obj_player_attack_hitbox.yy",},
     {"name":"obj_player_attack","order":8,"path":"objects/obj_player_attack/obj_player_attack.yy",},

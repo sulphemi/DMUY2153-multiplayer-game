@@ -15,19 +15,9 @@ fire_delay = 0
 
 charge_timer = 0
 
-if p1 {
-	hitbox = instance_create_depth(x, y, 5, obj_player_hitbox, 
-	{
-		player: id
-	});
-}
-else if !p1 {
-	hitbox = instance_create_depth(x, y, 5, obj_player_hitbox, 
-	{
-		player: id,
-		p1 : false
-	});
-}
+hitbox = instance_create_depth(x, y, 5, obj_player_hitbox, {
+	player: id
+});
 
 function bullet(_key, _x_offset, _y_offset){
 	if keyboard_check_pressed(_key) && fire_delay < 0 {

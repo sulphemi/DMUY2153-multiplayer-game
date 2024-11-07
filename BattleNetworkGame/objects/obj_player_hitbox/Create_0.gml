@@ -5,6 +5,7 @@ image_alpha = 0.35
 
 function damaged_by_player(_inst){
 	player.life -= _inst.damage
+	_inst.player.mana += _inst.mana_restore
 	_inst.destroy = true
 	got_damaged()
 }

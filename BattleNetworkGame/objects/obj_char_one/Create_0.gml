@@ -39,6 +39,9 @@ function charge(_key){
 			laser()
 			mana -= 90
 		}
+		else if charge_timer > 60 && mana > 60 {
+			flamethrower()
+		}
 		charge_timer = 0
 	}
 }
@@ -73,5 +76,15 @@ function create_laser_beam(_i){
 	}
 }
 
-function flamethrower(_key){
+/*
+function flamethrower(){
+	for (var _i = box_x; _i < box_x + 2; _i++){
+		if 1 {
+		}
+	}
+}*/
+
+/*
+function missile(){
 }
+*/

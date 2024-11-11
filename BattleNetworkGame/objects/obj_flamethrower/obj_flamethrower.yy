@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_fire",
+    "path":"sprites/spr_fire/spr_fire.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

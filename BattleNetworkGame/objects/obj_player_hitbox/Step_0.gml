@@ -8,6 +8,20 @@ if place_meeting(x, y, obj_player_attack_hitbox) {
 	}
 }
 
+if place_meeting(x, y, obj_terrain) {
+	var _inst = instance_place(x, y, obj_terrain)
+	if _inst.fire {
+		if fire_damage_delay < 0 {
+			player.life -= _inst.fire_damage
+			fire_damage_delay = fire_damage_cooldown
+		} else {
+			fire_damage_delay -= 1
+		}
+	} else {
+		fire_damage_delay = 0
+	}
+}
+
 if hit && invul_timer > 0 {
 	invul_timer -= 1
 	if invul_timer <= 0 {

@@ -1,4 +1,6 @@
 invul_timer = 0
+fire_damage_cooldown = 30
+fire_damage_delay = 0
 hit = false
 
 image_alpha = 0.35

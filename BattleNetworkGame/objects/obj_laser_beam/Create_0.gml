@@ -1,4 +1,4 @@
-lifetime = 30
+lifetime = 20
 
 if first_beam {
 	sprite_index = spr_first_laser_beam
@@ -11,7 +11,7 @@ else {
 
 	hitbox = instance_create_depth(pos.x, pos.y, 4, obj_player_attack_hitbox, {
 		player: player,
-		damage: 20,
-		mana_restore: 20
+		damage: 70,
+		mana_restore: 60
 	});
 }

@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_flamethrower",
+  "%Name":"obj_terrain",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_flamethrower",
+  "name":"obj_terrain",
   "overriddenProperties":[],
   "parent":{
-    "name":"Penguin Tank",
-    "path":"folders/Objects/Penguin Tank.yy",
+    "name":"Grid",
+    "path":"folders/Objects/Grid.yy",
   },
-  "parentObjectId":{
-    "name":"obj_player_attack",
-    "path":"objects/obj_player_attack/obj_player_attack.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_flamethrower",
-    "path":"sprites/spr_flamethrower/spr_flamethrower.yy",
+    "name":"spr_terrain_normal",
+    "path":"sprites/spr_terrain_normal/spr_terrain_normal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,17 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_grid_box",
+  "%Name":"obj_char_penguin",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_grid_box",
+  "name":"obj_char_penguin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Grid",
-    "path":"folders/Objects/Grid.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_player",
+    "path":"objects/obj_player/obj_player.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_grid_box",
-    "path":"sprites/spr_grid_box/spr_grid_box.yy",
+    "name":"spr_char1",
+    "path":"sprites/spr_char1/spr_char1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

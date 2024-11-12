@@ -15,13 +15,14 @@ grid = ds_grid_create(grid_width, grid_height)		//ds_grid array for box storage
 //creating the box grid 
 for(var _h = 0; _h < grid_height; _h++) {
 	for(var _w = 0; _w < grid_width; _w++) {
-		_temp_box = instance_create_depth(box_x, box_y, 5, obj_grid_box)
+		_temp_box = instance_create_depth(box_x, box_y, 5, obj_terrain)
+		_temp_outline = instance_create_depth(box_x, box_y, 5, obj_box_outline)
 		if _w < 4 {
-			_temp_box.default_image = spr_grid_box_p1
+			_temp_outline.default_image = spr_box_outline_p1
 		} else {
-			_temp_box.default_image = spr_grid_box_p2
+			_temp_outline.default_image = spr_box_outline_p2
 		}
-		_temp_box.sprite_index = _temp_box.default_image
+		_temp_outline.sprite_index = _temp_outline.default_image
 		ds_grid_set(grid, _w, _h, _temp_box)
 		box_x += x_inc
 	}
@@ -30,13 +31,14 @@ for(var _h = 0; _h < grid_height; _h++) {
 }
 
 //Create player 1
-player_one = instance_create_depth(ds_grid_get(grid, 0, 0).x, ds_grid_get(grid, 0, 0).y, 1, obj_char_one)
+player_one = instance_create_depth(ds_grid_get(grid, 0, 0).x, ds_grid_get(grid, 0, 0).y, 1, obj_char_penguin)
 player_one.p1 = true
 
 //Create player 2
-player_two = instance_create_depth(ds_grid_get(grid, 7, 0).x, ds_grid_get(grid, 7, 0).y, 1, obj_char_one, 
+player_two = instance_create_depth(ds_grid_get(grid, 7, 0).x, ds_grid_get(grid, 7, 0).y, 1, obj_char_penguin, 
 	{
-		p1: false
+		p1: false,
+		sprite_index: spr_char2
 	});
 player_two.box_x = 7
 player_two.box_y = 0

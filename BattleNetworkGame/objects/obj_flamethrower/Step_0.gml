@@ -1,2 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+if lifetime <= 0 {
+	instance_destroy(hitbox)
+	instance_destroy()
+}
+lifetime -= 1

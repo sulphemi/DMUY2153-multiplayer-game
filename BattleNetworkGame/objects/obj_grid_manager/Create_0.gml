@@ -35,7 +35,7 @@ player_one = instance_create_depth(ds_grid_get(grid, 0, 0).x, ds_grid_get(grid, 
 player_one.p1 = true
 
 //Create player 2
-player_two = instance_create_depth(ds_grid_get(grid, 7, 0).x, ds_grid_get(grid, 7, 0).y, 1, obj_char_penguin, 
+player_two = instance_create_depth(ds_grid_get(grid, 7, 0).x, ds_grid_get(grid, 7, 0).y, 1, obj_char_tomcat, 
 	{
 		p1: false,
 		sprite_index: spr_char2

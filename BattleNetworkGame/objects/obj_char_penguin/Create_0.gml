@@ -1,10 +1,10 @@
 event_inherited()
 
 char_spd = 0.5
-max_life = 1000
+max_life = 300
 life = max_life
 
-max_mana = 300
+max_mana = 100
 mana = max_mana
 mana_regen = 1
 mana_regen_rate = 18

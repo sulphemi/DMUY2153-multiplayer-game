@@ -1,6 +1,6 @@
 explode = false
+destroy = false
 lifetime = 60
-explode_array = []
 
 if player.p1 {
 	box_x += 3

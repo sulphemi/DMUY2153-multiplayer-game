@@ -57,6 +57,7 @@
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"obj_grid_manager","path":"objects/obj_grid_manager/obj_grid_manager.yy",},},
     {"id":{"name":"obj_laser_beam","path":"objects/obj_laser_beam/obj_laser_beam.yy",},},
+    {"id":{"name":"obj_missile_explosion","path":"objects/obj_missile_explosion/obj_missile_explosion.yy",},},
     {"id":{"name":"obj_missile","path":"objects/obj_missile/obj_missile.yy",},},
     {"id":{"name":"obj_player_attack_hitbox","path":"objects/obj_player_attack_hitbox/obj_player_attack_hitbox.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},

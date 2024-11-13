@@ -40,6 +40,7 @@
     {"name":"obj_flamethrower","order":6,"path":"objects/obj_flamethrower/obj_flamethrower.yy",},
     {"name":"obj_grid_manager","order":1,"path":"objects/obj_grid_manager/obj_grid_manager.yy",},
     {"name":"obj_laser_beam","order":4,"path":"objects/obj_laser_beam/obj_laser_beam.yy",},
+    {"name":"obj_life_meter","order":2,"path":"objects/obj_life_meter/obj_life_meter.yy",},
     {"name":"obj_meter","order":1,"path":"objects/obj_meter/obj_meter.yy",},
     {"name":"obj_missile_explosion","order":8,"path":"objects/obj_missile_explosion/obj_missile_explosion.yy",},
     {"name":"obj_missile","order":7,"path":"objects/obj_missile/obj_missile.yy",},

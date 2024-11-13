@@ -125,3 +125,6 @@ function missile(){
 			box_y: box_y
 		});
 }
+
+var _life_meter = instance_create_depth(x, y, -1, obj_life_meter);
+_life_meter.player = self;

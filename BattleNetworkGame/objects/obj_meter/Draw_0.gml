@@ -20,7 +20,7 @@ draw_set_color(c_gray);
 draw_rectangle(x1, y1, x1 + mana_percentage * BAR_MAXWIDTH, y2, false);
 
 
-draw_set_alpha(0.8);
+//draw_set_alpha(0.8);
 if(charge_percentage > charge_level3){
 	draw_set_color(c_red);
 }else if(charge_percentage > charge_level2){

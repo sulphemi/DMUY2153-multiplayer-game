@@ -61,3 +61,7 @@ function move_hitbox(){
 // create gui elements that go with this player
 var _charge_meter = instance_create_depth(x, y, -1, obj_charge_meter);
 _charge_meter.player = self;
+
+
+var _meter = instance_create_depth(x, y, -1, obj_meter);
+_meter.player = self;

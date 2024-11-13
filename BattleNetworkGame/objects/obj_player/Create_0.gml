@@ -56,3 +56,8 @@ function move_hitbox(){
 	hitbox.x = ds_grid_get(obj_grid_manager.grid, box_x, box_y).x
 	hitbox.y = ds_grid_get(obj_grid_manager.grid, box_x, box_y).y
 }
+
+
+// create gui elements that go with this player
+var _charge_meter = instance_create_depth(x, y, -1, obj_charge_meter);
+_charge_meter.player = self;

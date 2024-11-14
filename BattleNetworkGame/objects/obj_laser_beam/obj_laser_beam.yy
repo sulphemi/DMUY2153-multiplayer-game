@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_laser_beam",
-    "path":"sprites/spr_laser_beam/spr_laser_beam.yy",
+    "name":"spr_beam",
+    "path":"sprites/spr_beam/spr_beam.yy",
   },
   "spriteMaskId":null,
   "visible":true,

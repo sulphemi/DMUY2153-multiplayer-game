@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_missile",
-    "path":"sprites/spr_missile/spr_missile.yy",
+    "name":"spr_firebomb",
+    "path":"sprites/spr_firebomb/spr_firebomb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

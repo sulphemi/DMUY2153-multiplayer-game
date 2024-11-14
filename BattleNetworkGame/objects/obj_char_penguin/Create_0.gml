@@ -15,6 +15,8 @@ fire_delay = 0
 
 charge_timer = 0
 
+
+
 hitbox = instance_create_depth(x, y, 5, obj_player_hitbox, {
 	player: id
 });

@@ -1,6 +1,7 @@
 explode = false
 destroy = false
 lifetime = 60
+is_slowing = false;
 
 if player.p1 {
 	box_x += 3

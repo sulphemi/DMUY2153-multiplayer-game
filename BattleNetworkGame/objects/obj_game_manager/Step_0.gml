@@ -8,15 +8,25 @@ if room == rm_start {
 		    p2_ready = not p2_ready;
 		}
 	}
-
 	if(p1_ready and p2_ready and allow_ready){
 		allow_ready = false;
-		alarm[0] = 120;
+		alarm[0] = 60;
 	}
 }
+
 if room == rm_game {
 	game_timer -= 1
 	if game_timer == 0 || obj_player.life <= 0 {
 		game_over = true
+	}
+	if game_over == true {
+		if keyboard_check_pressed(vk_enter){
+			p1_ready = false
+			p2_ready = false
+			game_timer = 300
+			game_over = false
+			allow_ready = true
+			room_goto(rm_start)
+		}
 	}
 }

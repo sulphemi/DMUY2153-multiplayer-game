@@ -7,7 +7,12 @@ image_alpha = 0.35
 
 function damaged_by_player(_inst){
 	player.life -= _inst.damage
-	_inst.player.mana += _inst.mana_restore
+	if _inst.player.mana + _inst.mana_restore > 100 {
+		_inst.player.mana = 100
+	}
+	else {
+		_inst.player.mana += _inst.mana_restore
+	}
 	_inst.destroy = true
 	got_damaged()
 }

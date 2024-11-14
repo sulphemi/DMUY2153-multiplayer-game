@@ -33,8 +33,21 @@ if room == rm_game {
 	draw_set_halign(fa_center)
 	
 	if game_timer > 0 {
-		draw_text(room_width/2, 100, floor(game_timer/60))
+		draw_set_color(c_yellow);
+		draw_text(room_width/2, 30, floor(game_timer/60))
 	} else {
-		draw_text(room_width/2, 100, 0)
+		if obj_grid_manager.game_over == 0 {
+			draw_set_color(c_blue);
+			draw_text(room_width/2, 30, "Player 1 (Blue) Wins!")
+		} else if obj_grid_manager.game_over == 1 {
+			draw_set_color(c_red);
+			draw_text(room_width/2, 30, "Player 2 (Red) Wins!")
+		} else if obj_grid_manager.game_over == 2 {
+			draw_set_color(c_yellow);
+			draw_text(room_width/2, 30, "Tie!")
+		}
+		draw_set_color(c_yellow);
+		draw_text(room_width/2, room_height/2, "Press -Enter- to go back to Start!")
 	}
+	draw_set_color(c_white);
 }

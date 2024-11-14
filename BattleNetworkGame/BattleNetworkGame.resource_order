@@ -50,7 +50,6 @@
     {"name":"obj_player_attack_hitbox","order":5,"path":"objects/obj_player_attack_hitbox/obj_player_attack_hitbox.yy",},
     {"name":"obj_player_attack","order":6,"path":"objects/obj_player_attack/obj_player_attack.yy",},
     {"name":"obj_player_hitbox","order":2,"path":"objects/obj_player_hitbox/obj_player_hitbox.yy",},
-    {"name":"obj_start_screen","order":9,"path":"objects/obj_start_screen/obj_start_screen.yy",},
     {"name":"rm_start","order":1,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"spr_background","order":15,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_beam","order":9,"path":"sprites/spr_beam/spr_beam.yy",},

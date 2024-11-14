@@ -1,7 +1,7 @@
 //window_set_fullscreen(true)
 
 game_over = false
-game_timer = 3600
+game_timer = 300
 p1_ready = false;
 p2_ready = false;
 

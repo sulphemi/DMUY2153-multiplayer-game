@@ -23,7 +23,7 @@ if room == rm_game {
 		if keyboard_check_pressed(vk_enter){
 			p1_ready = false
 			p2_ready = false
-			game_timer = 300
+			game_timer = 3600
 			game_over = false
 			allow_ready = true
 			room_goto(rm_start)

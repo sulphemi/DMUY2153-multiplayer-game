@@ -18,5 +18,5 @@ else if poison{
 }
 else {
 	sprite_index = spr_terrain_normal
-	image_alpha = 0.15
+	image_alpha = 0
 }

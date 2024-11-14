@@ -1,6 +1,6 @@
 event_inherited()
 
-char_spd = 0.5
+char_spd = 0.25
 max_life = 300
 life = max_life
 
@@ -14,8 +14,6 @@ fire_rate = 30
 fire_delay = 0
 
 charge_timer = 0
-
-
 
 hitbox = instance_create_depth(x, y, 5, obj_player_hitbox, {
 	player: id

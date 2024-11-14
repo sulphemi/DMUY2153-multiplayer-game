@@ -1,4 +1,4 @@
-image_alpha = 0.15
+image_alpha = 0
 
 fire_damage = 2
 fire_time = 0

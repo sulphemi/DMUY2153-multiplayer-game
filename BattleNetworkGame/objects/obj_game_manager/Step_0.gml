@@ -16,9 +16,11 @@ if room == rm_start {
 
 if room == rm_game {
 	game_timer -= 1
-	if game_timer == 0 || obj_player.life <= 0 {
+	if game_timer == 0 || instance_number(obj_lifeline) <= 1 {
 		game_over = true
 	}
+	
+	
 	if game_over == true {
 		if keyboard_check_pressed(vk_enter){
 			p1_ready = false

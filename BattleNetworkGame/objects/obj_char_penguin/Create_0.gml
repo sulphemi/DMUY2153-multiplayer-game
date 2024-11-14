@@ -128,3 +128,11 @@ function missile(){
 
 var _life_meter = instance_create_depth(x, y, -1, obj_life_meter);
 _life_meter.player = self;
+
+
+
+
+am_i_alive = "what even is the meaning of life?";
+am_i_dead = false;
+
+alive_marker = instance_create_depth(0,0,0,obj_lifeline);

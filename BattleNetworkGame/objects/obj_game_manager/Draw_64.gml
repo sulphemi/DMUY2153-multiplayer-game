@@ -33,8 +33,7 @@ if room == rm_game {
 	draw_set_halign(fa_center)
 	
 	if game_timer > 0 {
-		draw_set_color(c_yellow);
-		draw_text(room_width/2, 30, floor(game_timer/60))
+		draw_txt_border(room_width/2, 30, floor(game_timer/60), c_white, c_black);
 	} else {
 		if obj_grid_manager.game_over == 0 {
 			draw_set_color(c_blue);

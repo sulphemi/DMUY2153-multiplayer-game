@@ -17,3 +17,14 @@ if !obj_game_manager.game_over {
 move_hitbox()
 
 move_character()
+
+if life <= 0 {
+	obj_grid_manager.stop_game = true
+	obj_game_manager.game_over = true
+	if p1 {
+		obj_grid_manager.game_over = 1
+	}
+	if !p1 {
+		obj_grid_manager.game_over = 0
+	}
+}

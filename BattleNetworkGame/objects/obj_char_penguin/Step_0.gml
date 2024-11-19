@@ -1,3 +1,5 @@
+event_inherited()
+
 if (life <= 0) {
 	if (am_i_dead) {
 		exit;	
@@ -11,7 +13,6 @@ if (life <= 0) {
 	}
 }
 
-event_inherited()
 if !obj_game_manager.game_over {
 	if p1 {
 		bullet(vk_space, 15, -35)

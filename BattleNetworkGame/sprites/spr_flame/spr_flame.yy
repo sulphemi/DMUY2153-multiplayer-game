@@ -24,7 +24,7 @@
   ],
   "name":"spr_flame",
   "nineSlice":null,
-  "origin":0,
+  "origin":1,
   "parent":{
     "name":"Penguin Tank",
     "path":"folders/Sprites/Penguin Tank.yy",
@@ -79,7 +79,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":65,
     "yorigin":0,
   },
   "swatchColours":null,

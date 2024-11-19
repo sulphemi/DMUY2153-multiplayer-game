@@ -47,4 +47,5 @@ player_two.y_dest = ds_grid_get(grid, player_two.box_x, player_two.box_y).y
 player_two.x = player_two.x_dest
 player_two.y = player_two.y_dest
 
+stop_game = false
 game_over = 0; //0 indicate p1 win, 1 indicates p2 win, 2 indicates a tie
